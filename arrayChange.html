@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrayChange</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function arrayChange(a){
+        var sum = 0;
+        console.log("Length cua mang:" + a.length)
+       for(var i =0; i<a.length -1; i++){
+        while (a[i] >= a[i + 1]) {
+            a[i + 1]++;
+            sum++;
+        }
+
+       }
+       console.log("Tong la:"+sum)
+   }
+   var arr =  [3122, -645, 2616, 13213, -8069]
+ arrayChange(arr)
+  
+</script>
+</html>
